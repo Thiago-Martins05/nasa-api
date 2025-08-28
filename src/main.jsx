@@ -19,11 +19,11 @@ const router = createBrowserRouter([
         element: <Apod />,
       },
       {
-        path: "Neo",
+        path: "neo",
         element: <Neo />,
       },
       {
-        path: "Rover",
+        path: "rover",
         element: <Rover />,
       },
     ],
