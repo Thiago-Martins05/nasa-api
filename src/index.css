@@ -1,0 +1,51 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Arvo", serif;
+  color: white;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #aa0c0c;
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgb(168, 8, 8);
+}
+
+::-webkit-calendar-picker-indicator {
+  filter: invert(1) brightness(100%) sepia(100%) saturate(100%)
+    hue-rotate(180deg);
+  cursor: pointer;
+}
+
+input[type="date"] {
+  width: 180px;
+  height: 50px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  color: #b91c1c;
+  border-radius: 4px;
+  outline: none;
+  background-color: #191b53;
+  font-weight: 500;
+}
+
+body {
+  background-color: #191b53;
+}
