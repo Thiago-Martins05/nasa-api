@@ -39,9 +39,7 @@ const Neo = () => {
           <ErrorMessage message={error} onRetry={refetch} />
         ) : neoData.length === 0 ? (
           <div className="text-center p-8">
-            <p className="text-lg">
-              No asteroids found for this date.
-            </p>
+            <p className="text-lg">No asteroids found for this date.</p>
           </div>
         ) : (
           <div className="h-96 overflow-auto border rounded-md p-5 bg-gray-800/50">

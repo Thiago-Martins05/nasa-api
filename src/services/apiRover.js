@@ -23,4 +23,4 @@ export async function fetchRoverData(url = null, date = DEFAULT_DATES.ROVER) {
     console.error("Rover API Error:", error);
     throw new Error(`Failed to load rover photos: ${error.message}`);
   }
-} 
+}

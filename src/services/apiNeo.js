@@ -27,4 +27,4 @@ export async function fetchNeoData(
     console.error("NEO API Error:", error);
     throw new Error(`Failed to load asteroid data: ${error.message}`);
   }
-} 
+}

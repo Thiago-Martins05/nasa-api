@@ -20,17 +20,20 @@ A modern React project that consumes NASA APIs to display real-time astronomical
 ## 🚀 How to Run
 
 1. **Clone the repository**
+
    ```bash
    git clone [repository-url]
    cd nasa-project
    ```
 
 2. **Install dependencies**
+
    ```bash
    npm install
    ```
 
 3. **Configure NASA API Key**
+
    - Create a `.env` file in the project root
    - Add your API key: `VITE_API_KEY=your_key_here`
    - Get your free key at: https://api.nasa.gov/
@@ -73,12 +76,14 @@ src/
 ## 🔧 Implemented Improvements
 
 ### Performance
+
 - ✅ Lazy loading for images
 - ✅ API request timeout
 - ✅ Component memoization
 - ✅ Optimized re-renders
 
 ### UX/UI
+
 - ✅ Loading states with spinners
 - ✅ Error handling with retry
 - ✅ Form validation
@@ -86,6 +91,7 @@ src/
 - ✅ Responsive design
 
 ### Code
+
 - ✅ Reusable custom hooks
 - ✅ Centralized configuration
 - ✅ Robust error handling
@@ -95,6 +101,7 @@ src/
 ## 📱 Responsiveness
 
 The project is fully responsive and works on:
+
 - 📱 Mobile devices
 - 💻 Tablets
 - 🖥️ Desktops
@@ -112,6 +119,7 @@ This project is open source and available under the MIT license.
 ## 👨‍💻 Developer
 
 **Thiago Martins**
+
 - GitHub: [@Thiago-Martins05](https://github.com/Thiago-Martins05)
 - LinkedIn: [LinkedIn Profile](https://linkedin.com/)
 - Instagram: [@your_instagram](https://instagram.com/)

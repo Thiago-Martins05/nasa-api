@@ -7,18 +7,21 @@ This document details all improvements implemented in the NASA API project, main
 ## 🏗️ **Architecture Improvements**
 
 ### 1. **Centralized Configuration**
+
 - ✅ Created `src/config/api.js` to centralize API configurations
 - ✅ Centralized constants for default dates
 - ✅ Request timeout configuration
 - ✅ Organized API URLs in one location
 
 ### 2. **Custom Hooks**
+
 - ✅ Created `src/hooks/useApi.js` for API state management
 - ✅ Loading, error, and data handling in a reusable hook
 - ✅ Automatic timeout for requests
 - ✅ Integrated retry function
 
 ### 3. **Improved API Services**
+
 - ✅ Robust error handling in all services
 - ✅ Response data validation
 - ✅ More descriptive error messages
@@ -27,23 +30,27 @@ This document details all improvements implemented in the NASA API project, main
 ## 🎨 **UX/UI Improvements**
 
 ### 1. **Loading Components**
+
 - ✅ `LoadingSpinner` with custom animation
 - ✅ Contextual messages for each loading type
 - ✅ Design consistent with application theme
 
 ### 2. **Error Handling**
+
 - ✅ `ErrorMessage` with retry option
 - ✅ Visual icons for different error types
 - ✅ Error messages in English
 - ✅ Integrated "Try again" button
 
 ### 3. **Lazy Loading Images**
+
 - ✅ `LazyImage` component with fallback
 - ✅ Skeleton loading during image load
 - ✅ Image error handling
 - ✅ Smooth transitions
 
 ### 4. **Form Validation**
+
 - ✅ Date validation in `Input` component
 - ✅ Visual feedback for invalid data
 - ✅ Informative icons
@@ -52,16 +59,19 @@ This document details all improvements implemented in the NASA API project, main
 ## ⚡ **Performance Improvements**
 
 ### 1. **Request Optimization**
+
 - ✅ 10-second timeout to prevent hanging
 - ✅ Automatic retry on failure
 - ✅ Data caching to avoid unnecessary requests
 
 ### 2. **Lazy Loading**
+
 - ✅ Images loaded on demand
 - ✅ Placeholder during loading
 - ✅ Reduced initial loading time
 
 ### 3. **Memoization**
+
 - ✅ `useCallback` for API functions
 - ✅ Optimized dependencies in hooks
 - ✅ Reduced unnecessary re-renders
@@ -69,6 +79,7 @@ This document details all improvements implemented in the NASA API project, main
 ## 🔧 **Code Improvements**
 
 ### 1. **File Structure**
+
 ```
 src/
 ├── config/          # Centralized configurations
@@ -80,12 +91,14 @@ src/
 ```
 
 ### 2. **Data Formatting Utilities**
+
 - ✅ `formatDate()` - Date formatting in Portuguese
 - ✅ `formatSpeed()` - Speed formatting
 - ✅ `formatDiameter()` - Diameter formatting
 - ✅ `getRoverStatusColor()` - Status-based colors
 
 ### 3. **Error Handling**
+
 - ✅ Try/catch in all services
 - ✅ Specific error messages
 - ✅ Detailed logs for debugging
@@ -94,12 +107,14 @@ src/
 ## 📱 **Responsiveness Improvements**
 
 ### 1. **Adaptive Design**
+
 - ✅ Responsive grid for rover photos
 - ✅ Flexible layout for asteroids
 - ✅ Mobile-optimized navigation
 - ✅ Scalable texts
 
 ### 2. **Responsive Components**
+
 - ✅ Adaptive date input
 - ✅ Responsive loading spinner
 - ✅ Responsive error messages
@@ -108,6 +123,7 @@ src/
 ## 🎯 **Specific Page Improvements**
 
 ### **APOD (Astronomy Picture of the Day)**
+
 - ✅ Loading state with spinner
 - ✅ Error handling with retry
 - ✅ Lazy loading for images
@@ -115,6 +131,7 @@ src/
 - ✅ Improved video support
 
 ### **NEO (Near-Earth Objects)**
+
 - ✅ Organized cards for asteroids
 - ✅ Informative icons
 - ✅ Improved data formatting
@@ -122,6 +139,7 @@ src/
 - ✅ Date validation
 
 ### **Rover (Mars Photos)**
+
 - ✅ Responsive grid for photos
 - ✅ Cards with detailed information
 - ✅ Colored rover status
@@ -131,17 +149,20 @@ src/
 ## 🚀 **New Features**
 
 ### 1. **404 Error Page**
+
 - ✅ Modern and informative design
 - ✅ Button to return to home
 - ✅ Visual icons
 - ✅ Clear message
 
 ### 2. **Form Validation**
+
 - ✅ Date validation
 - ✅ Visual feedback
 - ✅ Prevention of invalid data
 
 ### 3. **Retry System**
+
 - ✅ Automatic retry on failures
 - ✅ Manual retry button
 - ✅ Visual feedback of the process
@@ -149,6 +170,7 @@ src/
 ## 📊 **Quality Metrics**
 
 ### **Before Improvements**
+
 - ❌ No error handling
 - ❌ Basic loading states
 - ❌ Duplicated code
@@ -156,6 +178,7 @@ src/
 - ❌ Basic performance
 
 ### **After Improvements**
+
 - ✅ Robust error handling
 - ✅ Informative loading states
 - ✅ Reusable code
@@ -167,18 +190,21 @@ src/
 ## 🔮 **Suggested Next Improvements**
 
 ### **Short Term**
+
 - [ ] Implement local cache with localStorage
 - [ ] Add unit tests
 - [ ] Implement PWA (Progressive Web App)
 - [ ] Add dark/light mode
 
 ### **Medium Term**
+
 - [ ] Migrate to TypeScript
 - [ ] Implement internationalization
 - [ ] Add more NASA APIs
 - [ ] Implement interactive charts
 
 ### **Long Term**
+
 - [ ] Implement own backend
 - [ ] Add user system
 - [ ] Implement push notifications
