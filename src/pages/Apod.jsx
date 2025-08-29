@@ -33,8 +33,8 @@ const Apod = () => {
     <>
       <Header>Astronomy Picture of the Day</Header>
       <SubTitle subTitle={photoData.title} date={photoData.date} />
-      <main className="grid text-white py-3 grid-cols-1 grid-rows-2 lg:grid-cols-2 lg:grid-rows-1 gap-12 lg:gap-32 px-5 max-h-[50vh] w-4/5 m-auto">
-        <div className="min-h-[300px]">
+      <main className="flex flex-col lg:grid lg:grid-cols-2 text-white py-3 gap-6 lg:gap-12 px-5 w-4/5 m-auto">
+        <div className="min-h-[300px] lg:min-h-[400px]">
           {photoData.media_type === "image" ? (
             <LazyImage
               className="w-full h-full object-cover rounded-lg"
@@ -51,8 +51,8 @@ const Apod = () => {
             />
           )}
         </div>
-        <div className="w-full overflow-y-auto">
-          <h3 className="text-sm sm:text-3xl mr-6 font-medium leading-relaxed">
+        <div className="w-full max-h-[400px] overflow-y-auto">
+          <h3 className="text-sm sm:text-xl lg:text-2xl font-medium leading-relaxed">
             <span className="text-red-700">Explanation:</span>{" "}
             {photoData.explanation}
           </h3>
