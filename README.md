@@ -69,6 +69,51 @@
 - npm ou yarn
 - Chave da API da NASA
 
+## 🌐 Deploy na Vercel
+
+### 1. Preparação do Repositório
+```bash
+# Certifique-se de que todas as alterações estão commitadas
+git add .
+git commit -m "feat: prepare for deployment"
+```
+
+### 2. Criar Repositório no GitHub
+1. Acesse [GitHub](https://github.com)
+2. Clique em "New repository"
+3. Nome: `nasa-project`
+4. Descrição: "Aplicação React que consome APIs da NASA"
+5. Deixe público
+6. **NÃO** inicialize com README (já temos um)
+7. Clique em "Create repository"
+
+### 3. Conectar ao GitHub
+```bash
+# Adicionar remote origin
+git remote add origin https://github.com/Thiago-Martins05/nasa-project.git
+
+# Enviar para o GitHub
+git push -u origin master
+```
+
+### 4. Deploy na Vercel
+1. Acesse [Vercel](https://vercel.com)
+2. Faça login com sua conta GitHub
+3. Clique em "New Project"
+4. Importe o repositório `nasa-project`
+5. Configure as variáveis de ambiente:
+   - **Name**: `VITE_API_KEY`
+   - **Value**: Sua chave da API da NASA
+6. Clique em "Deploy"
+
+### 5. Configurações da Vercel
+- **Framework Preset**: Vite
+- **Build Command**: `npm run build`
+- **Output Directory**: `dist`
+- **Install Command**: `npm install`
+
+O projeto já inclui um arquivo `vercel.json` com configurações otimizadas!
+
 ### 1. Clone o repositório
 
 ```bash
