@@ -1,125 +1,237 @@
-# 🚀 NASA API Project
+# �� NASA API Project
 
-A modern React project that consumes NASA APIs to display real-time astronomical data.
+<div align="center">
 
-## ✨ Features
+![NASA Logo](public/images/logo-nasa.svg)
 
-- **APOD (Astronomy Picture of the Day)**: Daily astronomical image with detailed explanation
-- **NEO (Near-Earth Objects)**: Near-Earth asteroid data with velocity and size information
-- **Mars Rover Photos**: Curiosity rover photos on Mars with date filters
+**Uma aplicação React moderna que consome APIs da NASA para exibir dados astronômicos em tempo real.**
 
-## 🛠️ Technologies Used
+[![React](https://img.shields.io/badge/React-19.1.0-blue.svg)](https://reactjs.org/)
+[![Vite](https://img.shields.io/badge/Vite-7.0.4-purple.svg)](https://vitejs.dev/)
+[![Tailwind CSS](https://img.shields.io/badge/Tailwind-3.4.17-38B2AC.svg)](https://tailwindcss.com/)
+[![License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
 
-- **React 19** - JavaScript library for interfaces
-- **Vite** - Build tool and dev server
-- **React Router DOM** - Application routing
-- **Tailwind CSS** - Utility CSS framework
-- **Lucide React** - Modern icons
-- **NASA APIs** - Official astronomical data
+[🚀 Demo](#) • [📖 Documentação](#) • [🐛 Reportar Bug](#)
 
-## 🚀 How to Run
+</div>
 
-1. **Clone the repository**
+---
 
-   ```bash
-   git clone [repository-url]
-   cd nasa-project
-   ```
+## ✨ Funcionalidades
 
-2. **Install dependencies**
+### 🌌 Astronomy Picture of the Day (APOD)
 
-   ```bash
-   npm install
-   ```
+- **Imagem astronômica diária** com explicação detalhada
+- Suporte para imagens e vídeos
+- Interface responsiva e moderna
+- Carregamento lazy de imagens
 
-3. **Configure NASA API Key**
+### ☄️ Near-Earth Objects (NEO)
 
-   - Create a `.env` file in the project root
-   - Add your API key: `VITE_API_KEY=your_key_here`
-   - Get your free key at: https://api.nasa.gov/
+- **Dados de asteroides próximos à Terra**
+- Informações sobre velocidade e tamanho
+- Filtro por data personalizado
+- Visualização organizada em lista
 
-4. **Run the project**
-   ```bash
-   npm run dev
-   ```
+### 🛸 Mars Rover Photos
 
-## 📁 Project Structure
+- **Fotos do rover Curiosity em Marte**
+- Filtro por data específica
+- Informações sobre câmera e status do rover
+- Galeria responsiva de imagens
+
+## 🛠️ Tecnologias Utilizadas
+
+### Frontend
+
+- **[React 19](https://reactjs.org/)** - Biblioteca JavaScript para interfaces
+- **[Vite](https://vitejs.dev/)** - Ferramenta de build e servidor de desenvolvimento
+- **[React Router DOM](https://reactrouter.com/)** - Roteamento da aplicação
+- **[Tailwind CSS](https://tailwindcss.com/)** - Framework CSS utilitário
+
+### Bibliotecas
+
+- **[Lucide React](https://lucide.dev/)** - Ícones modernos
+- **[CLSX](https://github.com/lukeed/clsx)** - Utilitário para classes CSS condicionais
+- **[Dotenv](https://www.npmjs.com/package/dotenv)** - Gerenciamento de variáveis de ambiente
+
+### APIs
+
+- **[NASA APOD API](https://api.nasa.gov/planetary/apod)** - Imagem astronômica do dia
+- **[NASA NEO API](https://api.nasa.gov/neo/rest/v1/feed)** - Objetos próximos à Terra
+- **[NASA Mars Rover API](https://api.nasa.gov/mars-photos/api/v1/rovers/curiosity/photos)** - Fotos do rover Curiosity
+
+## 🚀 Como Executar
+
+### Pré-requisitos
+
+- Node.js (versão 18 ou superior)
+- npm ou yarn
+- Chave da API da NASA
+
+### 1. Clone o repositório
+
+```bash
+git clone https://github.com/Thiago-Martins05/nasa-project.git
+cd nasa-project
+```
+
+### 2. Instale as dependências
+
+```bash
+npm install
+```
+
+### 3. Configure a chave da API da NASA
+
+1. Acesse [https://api.nasa.gov/](https://api.nasa.gov/)
+2. Registre-se e obtenha sua chave gratuita
+3. Crie um arquivo `.env` na raiz do projeto:
+
+```env
+VITE_API_KEY=sua_chave_aqui
+```
+
+### 4. Execute o projeto
+
+```bash
+# Desenvolvimento
+npm run dev
+
+# Build para produção
+npm run build
+
+# Preview da build
+npm run preview
+
+# Linting
+npm run lint
+```
+
+## 📁 Estrutura do Projeto
 
 ```
-src/
-├── components/          # Reusable components
-│   ├── Header/         # Header with navigation
-│   ├── Footer/         # Footer with social links
-│   ├── Input/          # Date input component
-│   ├── SubTitle/       # Subtitle component
-│   ├── LoadingSpinner/ # Loading spinner
-│   ├── ErrorMessage/   # Error messages
-│   └── LazyImage/      # Image with lazy loading
-├── pages/              # Application pages
-│   ├── Apod.jsx        # Daily image page
-│   ├── Neo.jsx         # Asteroids page
-│   ├── Rover.jsx       # Mars photos page
-│   └── ErrorPage.jsx   # 404 error page
-├── services/           # API services
-│   ├── apiApod.js      # Daily image API
-│   ├── apiNeo.js       # Asteroids API
-│   └── apiRover.js     # Rover API
-├── hooks/              # Custom hooks
-│   └── useApi.js       # API state management hook
-├── config/             # Configurations
-│   └── api.js          # API configuration
-├── utils/              # Utilities
-│   └── formatters.js   # Data formatting functions
-└── assets/             # Static resources
+nasa-project/
+├── public/                 # Arquivos públicos
+│   └── images/            # Imagens estáticas
+├── src/
+│   ├── components/        # Componentes reutilizáveis
+│   │   ├── ErrorMessage/  # Mensagens de erro
+│   │   ├── Footer/        # Rodapé da aplicação
+│   │   ├── Header/        # Cabeçalho com navegação
+│   │   ├── Input/         # Componente de entrada
+│   │   ├── LazyImage/     # Imagem com carregamento lazy
+│   │   ├── LoadingSpinner/# Spinner de carregamento
+│   │   ├── NavBar/        # Barra de navegação
+│   │   └── SubTitle/      # Componente de subtítulo
+│   ├── pages/             # Páginas da aplicação
+│   │   ├── Apod.jsx       # Página da imagem do dia
+│   │   ├── ErrorPage.jsx  # Página de erro 404
+│   │   ├── Neo.jsx        # Página de asteroides
+│   │   └── Rover.jsx      # Página de fotos de Marte
+│   ├── services/          # Serviços de API
+│   │   ├── apiApod.js     # API da imagem do dia
+│   │   ├── apiNeo.js      # API de asteroides
+│   │   └── apiRover.js    # API do rover
+│   ├── hooks/             # Hooks customizados
+│   │   └── useApi.js      # Hook para gerenciamento de API
+│   ├── config/            # Configurações
+│   │   └── api.js         # Configuração das APIs
+│   ├── utils/             # Utilitários
+│   │   └── formatters.js  # Funções de formatação
+│   ├── App.jsx            # Componente principal
+│   ├── main.jsx           # Ponto de entrada
+│   └── index.css          # Estilos globais
+├── dist/                  # Build de produção
+├── package.json           # Dependências e scripts
+├── vite.config.js         # Configuração do Vite
+├── tailwind.config.js     # Configuração do Tailwind
+└── README.md              # Este arquivo
 ```
 
-## 🔧 Implemented Improvements
+## 🔧 Melhorias Implementadas
 
-### Performance
+### ⚡ Performance
 
-- ✅ Lazy loading for images
-- ✅ API request timeout
-- ✅ Component memoization
-- ✅ Optimized re-renders
+- ✅ **Carregamento lazy de imagens** - Melhora o tempo de carregamento
+- ✅ **Timeout de requisições API** - Evita travamentos
+- ✅ **Memoização de componentes** - Reduz re-renderizações desnecessárias
+- ✅ **Otimização de re-renderizações** - Melhor performance geral
 
-### UX/UI
+### 🎨 UX/UI
 
-- ✅ Loading states with spinners
-- ✅ Error handling with retry
-- ✅ Form validation
-- ✅ Animations and transitions
-- ✅ Responsive design
+- ✅ **Estados de carregamento** - Spinners informativos
+- ✅ **Tratamento de erros** - Mensagens claras com opção de retry
+- ✅ **Validação de formulários** - Entrada de dados segura
+- ✅ **Animações e transições** - Interface fluida
+- ✅ **Design responsivo** - Funciona em todos os dispositivos
 
-### Code
+### 💻 Código
 
-- ✅ Reusable custom hooks
-- ✅ Centralized configuration
-- ✅ Robust error handling
-- ✅ Modular components
-- ✅ Data formatting utilities
+- ✅ **Hooks customizados reutilizáveis** - Código mais limpo
+- ✅ **Configuração centralizada** - Fácil manutenção
+- ✅ **Tratamento robusto de erros** - Aplicação estável
+- ✅ **Componentes modulares** - Arquitetura escalável
+- ✅ **Utilitários de formatação** - Dados bem apresentados
 
-## 📱 Responsiveness
+## 📱 Responsividade
 
-The project is fully responsive and works on:
+A aplicação é totalmente responsiva e funciona perfeitamente em:
 
-- 📱 Mobile devices
-- 💻 Tablets
-- 🖥️ Desktops
+- 📱 **Dispositivos móveis** (320px+)
+- 📱 **Tablets** (768px+)
+- 💻 **Desktops** (1024px+)
+- 🖥️ **Telas grandes** (1440px+)
 
-## 🌟 APIs Used
+## 🌟 APIs Utilizadas
 
-- **APOD API**: Daily astronomical images
-- **NEO API**: Near-Earth object data
-- **Mars Rover API**: Curiosity rover photos
+### APOD API
 
-## 📄 License
+- **Endpoint**: `https://api.nasa.gov/planetary/apod`
+- **Funcionalidade**: Imagem astronômica do dia
+- **Dados**: URL da imagem, título, explicação, data
 
-This project is open source and available under the MIT license.
+### NEO API
 
-## 👨‍💻 Developer
+- **Endpoint**: `https://api.nasa.gov/neo/rest/v1/feed`
+- **Funcionalidade**: Objetos próximos à Terra
+- **Dados**: Nome, diâmetro, velocidade, data de aproximação
+
+### Mars Rover API
+
+- **Endpoint**: `https://api.nasa.gov/mars-photos/api/v1/rovers/curiosity/photos`
+- **Funcionalidade**: Fotos do rover Curiosity
+- **Dados**: URL da imagem, câmera, rover, status
+
+## 🚀 Scripts Disponíveis
+
+```bash
+# Desenvolvimento
+npm run dev          # Inicia servidor de desenvolvimento
+
+# Build
+npm run build        # Cria build de produção
+npm run preview      # Preview da build
+
+# Qualidade de código
+npm run lint         # Executa ESLint
+```
+
+## 📄 Licença
+
+Este projeto está licenciado sob a Licença MIT - veja o arquivo [LICENSE](LICENSE) para detalhes.
+
+## 👨‍💻 Desenvolvedor
 
 **Thiago Martins**
 
-- GitHub: [@Thiago-Martins05](https://github.com/Thiago-Martins05)
-- LinkedIn: [LinkedIn Profile](https://linkedin.com/)
-- Instagram: [@your_instagram](https://instagram.com/)
+- 🌐 **GitHub**: [@Thiago-Martins05](https://github.com/Thiago-Martins05)
+- 💼 **LinkedIn**: [Perfil LinkedIn](https://linkedin.com/)
+
+---
+
+<div align="center">
+
+⭐ **Se este projeto te ajudou, considere dar uma estrela!** ⭐
+
+</div>
