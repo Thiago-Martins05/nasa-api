@@ -2,7 +2,7 @@
 
 <div align="center">
 
-![NASA Logo](public/images/logo-nasa.svg)
+![NASA Logo](public/images/nasa-svg.svg)
 
 **Uma aplicação React moderna que consome APIs da NASA para exibir dados astronômicos em tempo real.**
 
