@@ -18,18 +18,12 @@ const Footer = () => {
         </a>
         <a
           className="hover:scale-105 duration-200 cursor-pointer hover:opacity-90"
-          href="https://linkedin.com/"
+          href="https://www.linkedin.com/in/thiago-martins-5556512b6"
           target="_blank"
         >
           <Linkedin size={36} />
         </a>
-        <a
-          className="hover:scale-105 duration-200 cursor-pointer hover:opacity-90 hidden sm:flex"
-          href="https://instagram.com/"
-          target="_blank"
-        >
-          <Instagram size={36} />
-        </a>
+
       </div>
     </footer>
   );

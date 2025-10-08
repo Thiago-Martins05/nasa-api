@@ -1,4 +1,4 @@
-# �� NASA API Project
+# NASA API Project
 
 <div align="center">
 
