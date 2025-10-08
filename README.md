@@ -276,7 +276,7 @@ Este projeto está licenciado sob a Licença MIT - veja o arquivo [LICENSE](LICE
 **Thiago Martins**
 
 - 🌐 **GitHub**: [@Thiago-Martins05](https://github.com/Thiago-Martins05)
-- 💼 **LinkedIn**: [Perfil LinkedIn](https://linkedin.com/)
+- 💼 **LinkedIn**: [Perfil LinkedIn](https://www.linkedin.com/in/thiago-martins-5556512b6)
 
 ---
 
